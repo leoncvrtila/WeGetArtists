@@ -1,0 +1,83 @@
+/*-----------------RESPONSIVE*/
+/*-----------------FOOTER*/
+footer {
+  background: #1e1c1c;
+  padding: 3%;
+  padding-bottom: 1%;
+  margin-top: 2%;
+}
+
+footer img {
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+}
+
+footer img:nth-child(2) {
+  margin: 0% 2%;
+}
+
+footer a, footer a:visited {
+  text-decoration: none;
+  color: #6d6d6d;
+  display: block;
+  margin: 10% 0%;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #d6d6d6;
+}
+
+#FooterWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  #FooterWrapp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+#FooterWrapp > div {
+  width: 50%;
+}
+
+@media only screen and (max-width: 425px) {
+  #FooterWrapp > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #FooterWrapp > div:first-child {
+    padding: 6% 0%;
+    text-align: center;
+  }
+}
+
+#FooterLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#FooterLinks > div {
+  padding: 3%;
+}
+/*# sourceMappingURL=footer.css.map */

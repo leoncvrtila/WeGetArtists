@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/*-----------------RESPONSIVE*/
+/*-----------------HEADER*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1%;
+  background: #161a1a;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  header {
+    padding: 2%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  header {
+    padding: 2%;
+  }
+}
+
+#HeaderWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+}
+
+@media only screen and (max-width: 425px) {
+  #HeaderWrapp {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #HeaderWrapp {
+    width: 90%;
+  }
+}
+
+#HeaderWrapp > div {
+  width: 50%;
+}
+
+@media only screen and (max-width: 425px) {
+  #HeaderWrapp > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #HeaderWrapp > div {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #HeaderWrapp > div {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #HeaderWrapp > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 4% 0%;
+    padding-bottom: 0%;
+  }
+}
+
+#MainHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  padding: 5%;
+  background-image: url("../images/bg.png"), -webkit-gradient(linear, left top, right top, color-stop(60%, black), color-stop(82%, #2e2e2e), to(#505050));
+  background-image: url("../images/bg.png"), linear-gradient(90deg, black 60%, #2e2e2e 82%, #505050 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  #MainHeader {
+    padding: 8% 5%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #MainHeader {
+    background-position: unset;
+  }
+}
+
+#MainHeader > div {
+  width: 50%;
+}
+
+@media only screen and (max-width: 425px) {
+  #MainHeader > div:first-child {
+    width: 0%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #MainHeader > div:first-child {
+    width: 0%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #MainHeader > div:first-child {
+    width: 30%;
+  }
+}
+
+#MainHeader > div:last-child {
+  width: 25%;
+}
+
+@media only screen and (max-width: 425px) {
+  #MainHeader > div:last-child {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #MainHeader > div:last-child {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #MainHeader > div:last-child {
+    width: 55%;
+  }
+}
+
+#MainHeader > div button {
+  background: #f14f25;
+  border-radius: 10px;
+  border: 1px solid #f14f25;
+  color: white;
+  padding: 3% 6%;
+  outline: none;
+  margin-bottom: 7%;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #MainHeader > div button {
+    padding: 2.5% 5%;
+  }
+}
+
+#MainHeader h1 {
+  font-weight: 700;
+}
+
+#MainHeader p {
+  margin: 5% 0%;
+}
+
+#MainHeader button:hover {
+  background: #d0360e;
+  border: 1px solid #d0360e;
+}
+
+#MainHeader h4, #MainHeader span {
+  font-size: 17px;
+  color: #7e7e7e;
+}
+
+#MainHeader h4 {
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+
+#MainHeader span {
+  font-weight: 500;
+}
+
+#MainHeader span {
+  font-weight: 600;
+}
+
+#MainHeader span::after {
+  content: '•';
+  color: #d0360e;
+  margin: 0% 2%;
+}
+
+#MainHeader span:last-child::after {
+  content: '';
+}
+
+#MainHeader span:hover {
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,126 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------FOOTER*/
+
+footer {
+    background: #1e1c1c;
+    padding: 3%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+}
+
+footer img {
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+}
+
+footer img:nth-child(2) {
+  margin: 0% 2%;
+}
+
+footer a, footer a:visited {
+    text-decoration: none;
+    color: #6d6d6d;
+    display: block;
+    margin: 10% 0%;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #d6d6d6;
+}
+
+#FooterWrapp {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+
+    @include respond-to(mob) { 
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    @include respond-to(medium-screens) { 
+    
+    }
+    
+    @include respond-to(laptop-screens) { 
+    
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+#FooterWrapp > div {
+    width: 50%;
+
+    @include respond-to(mob) { 
+      width: 100%;
+    }
+    
+    @include respond-to(medium-screens) { 
+    
+    }
+    
+    @include respond-to(laptop-screens) { 
+    
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+#FooterWrapp > div:first-child {
+
+  @include respond-to(mob) { 
+    padding: 6% 0%;
+    text-align: center;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#FooterLinks {
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#FooterLinks > div {
+    padding: 3%;
+}

@@ -1,0 +1,497 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Kodius</title>
+</head>
+<body>
+
+    <header>
+
+        <div id="HeaderWrapp">
+
+            <div>
+                <img src="./assets/images/logo.png" alt="wegetartists" />
+            </div>
+            
+            <nav>
+
+                <div><a href="./index.html">Home</a></div>
+                <div><a href="./my-music.html">My Music</a></div>
+                <div><a href="./create-new.html">Create New</a></div>
+                
+                <div id="Dropdown">
+
+                    <div class="DropdownMenu">
+                        <a href="#">Username</a>
+                        <span><img src="./assets/images/icons/down_arrow_icon.png" alt="arrow down" /></span>
+                    </div>
+
+                    <div class="DropdownLinks">
+                        <a href="#">My profile</a>
+                        <a href="#">Logout</a>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <div class="MobNavIcon" onclick="navBar()">
+                <img src="./assets/images/icons/hamb.svg" alt="mob-nav" />
+            </div>
+            
+            <nav id="MobNav">
+
+                <div><a href="./index.html">Home</a></div>
+                <div><a href="./my-music.html">My Music</a></div>
+                <div><a href="./create-new.html">Create New</a></div>
+                
+                <div id="Dropdown">
+
+                    <div class="DropdownMenu">
+                        <a href="#">Username</a>
+                        <span><img src="./assets/images/icons/down_arrow_icon.png" alt="arrow down" /></span>
+                    </div>
+
+                    <div class="DropdownLinks">
+                        <a href="#">My profile</a>
+                        <a href="#">Logout</a>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="MainHero">
+
+            <div id="MainHeroContainer">
+
+                <div class="Progress">
+                    <div><img src="./assets/images/progress-1.svg" alt="Label" /></div>
+                    <div><h2>Label / Master <br /> Rights Owners</h2></div>
+                </div>
+
+                <div class="Progress">
+                    <div><img src="./assets/images/progress-2.svg" alt="Label" /></div>
+                    <div><h2>Performing <br /> Artists / Band</h2></div>
+                </div>
+
+                <div class="Progress">
+                    <div><img src="./assets/images/progress-2.svg" alt="Label" /></div>
+                    <div><h2>Songwriters <br /> & Publishers</h2></div>
+                </div>
+
+                <div class="Progress">
+                    <div><img src="./assets/images/progress-2.svg" alt="Label" /></div>
+                    <div><h2>Production <br /> Team</h2></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="Wrapper">
+        
+            <section class="Container">
+
+                <h1>How the royalties are paid out</h1>
+        
+                <h2>Statistics overview</h2>
+        
+                <div id="Chart">
+                    <canvas id="chart"></canvas>
+                </div>
+
+                <div id="ChartPercentage">
+
+                    <div class="ChartPercentage">
+                        <div class="ChartPercentageBracket"></div>
+                        <div><h3>40%</h3></div>
+                        <div><h4>Label / Master <br /> Rights Owners</h4></div>
+                    </div>
+
+                    <div class="ChartPercentage">
+                        <div class="ChartPercentageBracket"></div>
+                        <div><h3>20%</h3></div>
+                        <div><h4>Performing <br /> Artist / Band</h4></div>
+                    </div>
+
+                    <div class="ChartPercentage">
+                        <div class="ChartPercentageBracket"></div>
+                        <div><h3>20%</h3></div>
+                        <div><h4>Songwriters <br /> & Publishers</h4></div>
+                    </div>
+
+                    <div class="ChartPercentage">
+                        <div class="ChartPercentageBracket"></div>
+                        <div><h3>20%</h3></div>
+                        <div><h4>Production Team</h4></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+
+                <div id="BoxWrapp">
+
+                    <div class="Box">
+
+                        <div class="BoxHeader">
+                            <div><img src="./assets/images/icons/icon-star.svg" alt="icon" /></div>
+                            <div><h4>Label / Master Rights Owners</h4></div>
+                        </div>
+
+                        <div class="BoxBody">
+                            <div>
+                                <span>Backer</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Label</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Studio</span>
+                                <span>5%</span>
+                            </div>
+                        </div>
+
+                        <div class="BoxFooter">
+                            <span>Total: </span>
+                            <span>50%</span>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="Box">
+
+                        <div class="BoxHeader">
+                            <div><img src="./assets/images/icons/icon-microphone.svg" alt="icon" /></div>
+                            <div><h4>Performing Artist / Band</h4></div>
+                        </div>
+
+                        <div class="BoxBody">
+                            <div>
+                                <span>Drummer</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Bass</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Guitar</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Singer</span>
+                                <span>5%</span>
+                            </div>
+                        </div>
+
+                        <div class="BoxFooter">
+                            <span>Total: </span>
+                            <span>50%</span>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="Box">
+
+                        <div class="BoxHeader">
+                            <div><img src="./assets/images/icons/icon-note.svg" alt="icon" /></div>
+                            <div><h4>Songwriters & Publishers</h4></div>
+                        </div>
+
+                        <div class="BoxBody">
+                            <div>
+                                <span>Writer</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Publisher</span>
+                                <span>5%</span>
+                            </div>
+                        </div>
+
+                        <div class="BoxFooter">
+                            <span>Total: </span>
+                            <span>50%</span>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
+                <div id="BoxWrapp">
+
+                    <div class="Box">
+
+                        <div class="BoxHeader">
+                            <div><img src="./assets/images/icons/icon-persons.svg" alt="icon" /></div>
+                            <div><h4>Production Team: Studio Musicians & Singers</h4></div>
+                        </div>
+
+                        <div class="BoxBody">
+                            <div>
+                                <span>Acoustic Guitar</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Saxophone</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Keyboards</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Violin</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Harp</span>
+                                <span>5%</span>
+                            </div>
+                        </div>
+
+                        <div class="BoxFooter">
+                            <span>Total: </span>
+                            <span>50%</span>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="Box">
+
+                        <div class="BoxHeader">
+                            <div><img src="./assets/images/icons/icon-persons.svg" alt="icon" /></div>
+                            <div><h4>Production Team: Engineers</h4></div>
+                        </div>
+
+                        <div class="BoxBody">
+                            <div>
+                                <span>Tracking</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Mixing</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Mastering</span>
+                                <span>5%</span>
+                            </div>
+                        </div>
+
+                        <div class="BoxFooter">
+                            <span>Total: </span>
+                            <span>50%</span>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="Box">
+
+                        <div class="BoxHeader">
+                            <div><img src="./assets/images/icons/icon-persons.svg" alt="icon" /></div>
+                            <div><h4>Production Team: Producer & Arranger</h4></div>
+                        </div>
+
+                        <div class="BoxBody">
+                            <div>
+                                <span>Producer</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Publisher</span>
+                                <span>5%</span>
+                            </div>
+                        </div>
+
+                        <div class="BoxFooter">
+                            <span>Total: </span>
+                            <span>50%</span>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
+                <div id="BoxWrapp">
+
+                    <div class="Box">
+
+                        <div class="BoxHeader">
+                            <div><img src="./assets/images/icons/icon-tag.svg" alt="icon" /></div>
+                            <div><h4>Section Musicians (Pro-rated)</h4></div>
+                        </div>
+
+                        <div class="BoxBody">
+                            <div>
+                                <span>Horn section</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Singers</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Percussion</span>
+                                <span>5%</span>
+                            </div>
+                        </div>
+
+                        <div class="BoxFooter">
+                            <span>Total: </span>
+                            <span>50%</span>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="Box">
+
+                        <div class="BoxHeader">
+                            <div><img src="./assets/images/icons/icon-tag.svg" alt="icon" /></div>
+                            <div><h4>Artist / Band Business Team Letters of direction (From Artist Royalties)</h4></div>
+                        </div>
+
+                        <div class="BoxBody">
+                            <div>
+                                <span>Manager</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Lawyer</span>
+                                <span>5%</span>
+                            </div>
+                            <div>
+                                <span>Business Manager</span>
+                                <span>5%</span>
+                            </div>
+                        </div>
+
+                        <div class="BoxFooter">
+                            <span>Total: </span>
+                            <span>50%</span>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="Box">
+                        
+                        <!--
+                        <div class="BoxHeader">
+                           <div><img src="./assets/images/icons/icon-tag.svg" alt="icon" /></div>
+                            <div><h4>Section Musicians (Pro-rated)</h4></div>
+                        </div>
+
+                        <div class="BoxBody">
+                            <div>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="BoxFooter">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        -->
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+        <!--<section class="container pb-5">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </section>-->
+        
+    </main>
+
+    <footer>
+
+        <div id="FooterWrapp">
+
+            <div>
+
+                <div style="color: #e7e7e7;">WeGet Artists</div>
+
+                <div style="margin: 3% 0%;">
+                    <img src="./assets/images/icons/icon-fa-fb.svg" alt="Facebook"/>
+                    <img src="./assets/images/icons/icon-fa-twitter.svg" alt="Twitter"/>
+                    <img src="./assets/images/icons/icon-fa-linkedin.svg" alt="LinkedIn"/>
+                </div>
+
+                <div style="color: #6d6d6d; font-size: 14px;">WeGetArtists 2021.</div>
+
+            </div>
+
+            <div id="FooterLinks">
+
+                <div>
+                    <a href="#">Genres</a>
+                    <a href="#">Instruments</a>
+                    <a href="#">Vibe & Mood</a>
+                    <a href="#">Sounds like</a>
+                </div>
+
+                <div>
+                    <a href="#">FAQ</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script> -->
+    <script src="./assets/js/chart.js"></script>
+    <script src="./assets/js/nav.js"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

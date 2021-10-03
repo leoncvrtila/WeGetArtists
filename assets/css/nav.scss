@@ -1,0 +1,215 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------NAV*/
+
+
+#MobNav { 
+  @include respond-to(mob) { 
+    display: none;
+  }
+  
+  @include respond-to(medium-screens) { 
+    display: none;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    display: none;
+  }
+  
+  @include respond-to(wide-screens) { 
+    display: none;
+  }
+}
+
+#MobNav > div{
+
+  @include respond-to(mob) { 
+    margin: 5% 5%;
+    text-align: center;
+  }
+  
+  @include respond-to(medium-screens) { 
+
+  }
+  
+  @include respond-to(laptop-screens) { 
+
+  }
+  
+  @include respond-to(wide-screens) { 
+
+  }
+
+}
+
+
+.MobNavIcon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin: 1% 0%;
+
+  @include respond-to(mob) { 
+    
+  }
+  
+  @include respond-to(medium-screens) { 
+    display: none;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    display: none;
+  }
+  
+  @include respond-to(wide-screens) { 
+    display: none;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  margin: auto;
+
+  @include respond-to(mob) { 
+    display: none;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#HeaderWrapp > nav  {
+  width: 50%;
+
+  @include respond-to(mob) { 
+    width: 100%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    width: 70%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    width: 70%;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#Dropdown img {
+  height: 16px;
+  width: 16px;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+#Dropdown:hover .DropdownLinks{
+  display: block;
+}
+
+#Dropdown:hover span img {
+  transform: rotate(180deg);
+}
+
+nav > div {
+  margin: 0% 5%;
+}
+
+nav > div:last-child {
+  margin: 0% 0%;
+  margin-left: 5%;
+}
+
+nav a, nav a:visited {
+  text-decoration: none;
+  color: #6d6d6d;
+}
+
+nav a:hover {
+  color: #d6d6d6;
+}
+
+.DropdownLinks {
+  display: none;
+  position: absolute;
+  background: #464545;
+  padding: 1%;
+
+  @include respond-to(mob) { 
+    margin-top: 4%;
+    position: unset;
+  }
+  
+  @include respond-to(medium-screens) { 
+
+  }
+  
+  @include respond-to(laptop-screens) { 
+
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+.DropdownLinks a, .DropdownLinks a:visited{
+  display: block;
+  color: #bdbdbd;
+  margin-top: 4%;
+}
+
+.DropdownLinks a:hover {
+  color: #d6d6d6;
+}
+
+.DropdownLinks a:last-child {
+  @include respond-to(mob) { 
+    margin-bottom: 4%;
+  }
+  
+  @include respond-to(medium-screens) { 
+
+  }
+  
+  @include respond-to(laptop-screens) { 
+
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}

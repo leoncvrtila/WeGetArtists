@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Create New</title>
+</head>
+<body>
+
+    <header>
+
+        <div id="HeaderWrapp">
+
+            <div>
+                <img src="./assets/images/logo.png" alt="wegetartists" />
+            </div>
+            
+            <nav>
+
+                <div><a href="./index.html">Home</a></div>
+                <div><a href="./my-music.html">My Music</a></div>
+                <div><a href="./create-new.html">Create New</a></div>
+                
+                <div id="Dropdown">
+
+                    <div class="DropdownMenu">
+                        <a href="#">Username</a>
+                        <span><img src="./assets/images/icons/down_arrow_icon.png" alt="arrow down" /></span>
+                    </div>
+
+                    <div class="DropdownLinks">
+                        <a href="#">My profile</a>
+                        <a href="#">Logout</a>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <div class="MobNavIcon" onclick="navBar()">
+                <img src="./assets/images/icons/hamb.svg" alt="mob-nav" />
+            </div>
+            
+            <nav id="MobNav">
+
+                <div><a href="./index.html">Home</a></div>
+                <div><a href="./my-music.html">My Music</a></div>
+                <div><a href="./create-new.html">Create New</a></div>
+                
+                <div id="Dropdown">
+
+                    <div class="DropdownMenu">
+                        <a href="#">Username</a>
+                        <span><img src="./assets/images/icons/down_arrow_icon.png" alt="arrow down" /></span>
+                    </div>
+
+                    <div class="DropdownLinks">
+                        <a href="#">My profile</a>
+                        <a href="#">Logout</a>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="MainHeader">
+
+            <div></div>
+
+            <div>
+
+                <h1>My Music</h1>
+                <p>Check your music statistics daily. Get more <br /> sales with the better marketing strategy.</p>
+
+                <button>Upload Track</button>
+
+                <div>
+                    <h4>Manage your:</h4>
+                    <div>
+                        <span>Tracks</span>
+                        <span>Albums / Compilations</span>
+                        <span>Artists</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="Wrapper">
+
+            <div class="Container">
+                <h3>Statistics for August, 2021</h3>
+
+                <div id="Wrapper-col-1">
+
+                    <div class="Statistics">
+                        <div class="StatisticsArrow">
+                            <div><img src="./assets/images/arrow.png" alt="Arrow" /></div>
+                        </div>
+                        <div>
+                            <h3>560</h3>
+                            <p>Plays</p>
+                        </div>
+                        <div>+30,90%</div>
+                    </div>
+
+                    <div class="Statistics">
+                        <div class="StatisticsArrow">
+                            <div><img src="./assets/images/arrow.png" alt="Arrow" /></div>
+                        </div>
+                        <div>
+                            <h3>234</h3>
+                            <p>Heard</p>
+                        </div>
+                        <div>-5,90%</div>
+                    </div>
+
+                    <div class="Statistics">
+                        <div class="StatisticsArrow">
+                            <div><img src="./assets/images/arrow.png" alt="Arrow" /></div>
+                        </div>
+                        <div>
+                            <h3>560</h3>
+                            <p>Forwarded</p>
+                        </div>
+                        <div>+30,90%</div>
+                    </div>
+
+                    <div class="Statistics">
+                        <div class="StatisticsArrow">
+                            <div><img src="./assets/images/arrow.png" alt="Arrow" /></div>
+                        </div>
+                        <div>
+                            <h3>$31,545</h3>
+                            <p>Revenue</p>
+                        </div>
+                        <div>+20,90%</div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="Container">
+
+                <h3>Tracks in Progress</h3>
+
+                <div id="InputWrapp">
+
+                    <div>
+                        <div class="Toggle">
+                            <div>View List</div>
+                            <div>Upload New</div>
+                        </div>
+                    </div>
+
+                    <div></div>
+
+                </div>
+
+                <div id="AddNewTracksWrapp">
+
+                    <div id="AddNewTracks">
+
+                        <div><h3>Add new Tracks</h3></div>
+
+                        <div>
+                            <img src="./assets/images/icons/upload.svg" alt="upload" />
+                        </div>
+
+                        <div><p>Drag and drop .wav files here or <label style="text-decoration: underline;">upload</label>. <br /> Files will be converted to them into mp3.</p></div>
+
+                    </div>
+
+                    <div id="AddNewTracksUploaded">
+
+                        <div class="TableContainer">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Status</th>
+                                        <th>Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Track Title Placed Here</td>
+                                        <td>20%</td>
+                                        <td class="Edit">
+                                            <div>Edit</div>
+                                            <div><img src="./assets/images/icons/pen.png" alt="edit" /></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="Container">
+
+                <div id="Wrapper-col-3">
+
+                    <div id="InputWrapp">
+
+                        <div id="HeaderNImg">
+                            <div><img src="assets/images/music-icon.png" alt="Published Tracks"/></div>
+                            <h3>Published Tracks</h3>
+                        </div>
+
+                        <div><input type="text" placeholder="Search" /></div>
+
+                    </div>
+
+                    <div class="TableContainer">
+
+                            <table>
+                            
+                                <thead>
+                                    <th>Metadata</th>
+                                    <th>
+                                        <div>
+                                            <p>Artist</p>
+                                            <div class="TableArrows">
+                                                <div>▴</div>
+                                                <div>▾</div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <p>Title</p>
+                                            <div class="TableArrows">
+                                                <div>▴</div>
+                                                <div>▾</div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>Alt. Mixes</th>
+                                    <th>
+                                        <div>
+                                            <p>Heard</p>
+                                            <div class="TableArrows">
+                                                <div>▴</div>
+                                                <div>▾</div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <p>Forwarded</p>
+                                            <div class="TableArrows">
+                                                <div>▴</div>
+                                                <div>▾</div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <p>Listens</p>
+                                            <div class="TableArrows">
+                                                <div>▴</div>
+                                                <div>▾</div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <p>Plays</p>
+                                            <div class="TableArrows">
+                                                <div>▴</div>
+                                                <div>▾</div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <p>Revenue</p>
+                                            <div class="TableArrows">
+                                                <div>▴</div>
+                                                <div>▾</div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>Options</th>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="Metadata">
+                                                <div></div>
+                                            </div>
+                                            <span>20%</span>
+                                        </td>
+                                        <td>Artist's name here</td>
+                                        <td>Track title</td>
+                                        <td>✓</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>$100,000,000</td>
+                                        <td>•••</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="Metadata">
+                                                <div></div>
+                                            </div>
+                                            <span>20%</span>
+                                        </td>
+                                        <td>Artist's name here</td>
+                                        <td>Track title</td>
+                                        <td>☓</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>$100,000,000</td>
+                                        <td>•••</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="Metadata">
+                                                <div></div>
+                                            </div>
+                                            <span>20%</span>
+                                        </td>
+                                        <td>Artist's name here</td>
+                                        <td>Track title</td>
+                                        <td>✓</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>$100,000,000</td>
+                                        <td>•••</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="Metadata">
+                                                <div></div>
+                                            </div>
+                                            <span>20%</span>
+                                        </td>
+                                        <td>Artist's name here</td>
+                                        <td>Track title</td>
+                                        <td>✓</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>$100,000,000</td>
+                                        <td>•••</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="Metadata">
+                                                <div></div>
+                                            </div>
+                                            <span>20%</span>
+                                        </td>
+                                        <td>Artist's name here</td>
+                                        <td>Track title</td>
+                                        <td>☓</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>$100,000,000</td>
+                                        <td>•••</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="Metadata">
+                                                <div></div>
+                                            </div>
+                                            <span>20%</span>
+                                        </td>
+                                        <td>Artist's name here</td>
+                                        <td>Track title</td>
+                                        <td>✓</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>$100,000,000</td>
+                                        <td>•••</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="Metadata">
+                                                <div></div>
+                                            </div>
+                                            <span>20%</span>
+                                        </td>
+                                        <td>Artist's name here</td>
+                                        <td>Track title</td>
+                                        <td>✓</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>10000</td>
+                                        <td>$100,000,000</td>
+                                        <td>•••</td>
+                                    </tr>
+                                </tbody>
+                            
+                            </table>
+
+                    </div>
+
+                    <div class="PageNum">
+                        <span>〱</span>
+                        Page 2 of 4
+                        <span>〱</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="Container">
+
+                <h3>Albums or Compilations</h3>
+
+                <div id="InputWrapp">
+
+                    <div>
+                        <div class="Toggle">
+                            <div>View List</div>
+                            <div>Upload New</div>
+                        </div>
+                    </div>
+
+                    <div></div>
+
+                </div>
+
+                <div id="UploadAlbumWrapp">
+
+                    <h4>Add new Album / Compilation</h4>
+
+                    <div>
+
+                        <div class="UploadAlbum">
+
+                            <form>
+
+                                <div>
+                                    <input type="text" placeholder="Name" />
+                                </div>
+
+                                <div>
+                                    <select>
+                                        <optgroup>
+                                            <option value="" selected disabled hidden>Artist</option>
+                                            <option value="">Artist 1</option>
+                                            <option value="">Artist 2</option>
+                                            <option value="">Artist 3</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+
+                                <div class="AttachFile">
+                                    <div>Cover Artwork</div>
+                                    <button>Attach file</button>
+                                </div>
+
+                                <span>Image types include: JPEG or PNG. Minimal recommended 400 x 400 px, <br /> at least 72 dpi. Maximum file size 2 MB.</span>
+
+                                <div>
+                                    <input type="text" placeholder="Artwork Credits" />
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class="ImgPreview">
+                            <div class="UploadedImg"><img src="./assets/images/upload-img.svg" alt="UploadedImg" /></div>
+                            <span>This is preview of Cover Artwork</span>
+                        </div>
+
+                    </div>
+
+                    <button>Save</button>
+
+                </div>
+
+            </div>
+
+            <div class="Container">
+
+                <h3>Artists and Bands</h3>
+
+                <div id="InputWrapp">
+
+                    <div>
+                        <div class="Toggle">
+                            <div>View List</div>
+                            <div>Add New</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="Search" />
+                        <div id="ArrowsSearch">
+                            <p>A-Z</p>
+                            <div class="TableArrows">
+                                <div>▴</div>
+                                <div>▾</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <span class="CompilationsSpan">List of Artist / Bands</span>
+
+                <div id="Compilations">
+
+                    <div class="Compilation">
+                        <img src="./assets/images/artist.png" alt="Compilation" />
+                        <h4>Artist / bend name here</h4>
+                    </div>
+
+                    <div class="Compilation">
+                        <img src="./assets/images/artist.png" alt="Compilation" />
+                        <h4>Artist / bend name here</h4>
+                    </div>
+
+                    <div class="Compilation">
+                        <img src="./assets/images/artist.png" alt="Compilation" />
+                        <h4>Artist / bend name here</h4>
+                    </div>
+
+                    <div class="Compilation">
+                        <img src="./assets/images/artist.png" alt="Compilation" />
+                        <h4>Artist / bend name here</h4>
+                    </div>
+
+                </div>
+
+                <div id="Compilations">
+
+                    <div class="Compilation">
+                        <img src="./assets/images/artist.png" alt="Compilation" />
+                        <h4>Artist / bend name here</h4>
+                    </div>
+
+                    <div class="Compilation">
+                        <img src="./assets/images/artist.png" alt="Compilation" />
+                        <h4>Artist / bend name here</h4>
+                    </div>
+
+                    <div class="Compilation">
+                        <img src="./assets/images/artist.png" alt="Compilation" />
+                        <h4>Artist / bend name here</h4>
+                    </div>
+
+                    <div class="Compilation">
+                        <img src="./assets/images/artist.png" alt="Compilation" />
+                        <h4>Artist / bend name here</h4>
+                    </div>
+
+                </div>
+
+                <div class="PageNum">
+                    <span style="color: #d4d4d4;"></span>
+                    Page 1 of 3
+                    <span>〱</span>
+                </div>
+
+            </div> 
+
+        </div>
+    
+    </main>
+        
+    <footer>
+
+        <div id="FooterWrapp">
+
+            <div>
+
+                <div style="color: #e7e7e7;">WeGet Artists</div>
+
+                <div style="margin: 3% 0%;">
+                    <img src="./assets/images/icons/icon-fa-fb.svg" alt="Facebook"/>
+                    <img src="./assets/images/icons/icon-fa-twitter.svg" alt="Twitter"/>
+                    <img src="./assets/images/icons/icon-fa-linkedin.svg" alt="LinkedIn"/>
+                </div>
+
+                <div style="color: #6d6d6d; font-size: 14px;">WeGetArtists 2021.</div>
+
+            </div>
+
+            <div id="FooterLinks">
+
+                <div>
+                    <a href="#">Genres</a>
+                    <a href="#">Instruments</a>
+                    <a href="#">Vibe & Mood</a>
+                    <a href="#">Sounds like</a>
+                </div>
+
+                <div>
+                    <a href="#">FAQ</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+    <script src="./assets/js/nav.js"></script>
+</body>
+</html>

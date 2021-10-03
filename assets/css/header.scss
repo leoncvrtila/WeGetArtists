@@ -1,0 +1,264 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------HEADER*/
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  background: #161a1a;
+
+  @include respond-to(mob) { 
+
+  }
+  
+  @include respond-to(medium-screens) { 
+    padding: 2%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    padding: 2%;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#HeaderWrapp {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+
+  @include respond-to(mob) { 
+    display: block;
+    width: 100%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    width: 90%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+
+}
+
+#HeaderWrapp > div{
+  width: 50%;
+
+  @include respond-to(mob) { 
+    width: 100%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    width: 30%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    width: 30%;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#HeaderWrapp > div {
+
+  @include respond-to(mob) { 
+    display: flex;
+    justify-content: center;
+    padding: 4% 0%;
+    padding-bottom: 0%;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#MainHeader {
+    display: flex;
+    color: white;
+    padding: 5%;
+    background-image: url('../images/bg.png'), linear-gradient(90deg, rgba(0,0,0,1) 60%, rgba(46,46,46,1) 82%, rgba(80,80,80,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    @include respond-to(mob) { 
+      padding: 8% 5%;
+    }
+    
+    @include respond-to(medium-screens) { 
+      background-position: unset;
+    }
+    
+    @include respond-to(laptop-screens) { 
+    
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+
+  }
+  
+  #MainHeader > div {
+    width: 50%;
+  }
+
+  #MainHeader > div:first-child {
+    
+
+    @include respond-to(mob) { 
+      width: 0%;
+    }
+    
+    @include respond-to(medium-screens) { 
+      width: 0%;
+    }
+    
+    @include respond-to(laptop-screens) { 
+      width: 30%;
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+
+  }
+
+
+  
+  #MainHeader > div:last-child {
+    width: 25%;
+
+    
+    @include respond-to(mob) { 
+      width: 100%;
+    }
+    
+    @include respond-to(medium-screens) { 
+      width: 100%;
+    }
+    
+    @include respond-to(laptop-screens) { 
+      width: 55%;
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  
+  #MainHeader > div button {
+    background: #f14f25;
+    border-radius: 10px;
+    border: 1px solid #f14f25;
+    color: white;
+    padding: 3% 6%;
+    outline: none;
+    margin-bottom: 7%;
+    font-size: 17px;
+    cursor: pointer;
+
+    @include respond-to(mob) { 
+
+    }
+    
+    @include respond-to(medium-screens) { 
+      padding: 2.5% 5%;
+    }
+    
+    @include respond-to(laptop-screens) { 
+    
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  
+  #MainHeader h1 {
+    font-weight: 700;
+  }
+  
+  #MainHeader p {
+    margin: 5% 0%;
+  }
+  
+  #MainHeader button:hover {
+    background: #d0360e;
+    border: 1px solid #d0360e;
+  }
+  
+  #MainHeader h4, #MainHeader span {
+    font-size: 17px;
+    color: #7e7e7e;
+  }
+
+  #MainHeader h4 {
+    font-weight: 400;
+    margin-bottom: 2%;
+  }
+
+  #MainHeader span {
+    font-weight: 500;
+}
+
+  
+  #MainHeader span {
+    font-weight: 600;
+  }
+  
+  #MainHeader span::after {
+    content: '•';
+    color: #d0360e;
+    margin: 0% 2%;
+  }
+  
+  #MainHeader span:last-child::after {
+    content: '';
+  }
+  
+  #MainHeader span:hover {
+    color: white;
+    cursor: pointer;
+  }
+  

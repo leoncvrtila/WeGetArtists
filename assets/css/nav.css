@@ -1,0 +1,160 @@
+/*-----------------RESPONSIVE*/
+/*-----------------NAV*/
+@media only screen and (max-width: 425px) {
+  #MobNav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #MobNav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #MobNav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #MobNav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #MobNav > div {
+    margin: 5% 5%;
+    text-align: center;
+  }
+}
+
+.MobNavIcon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin: 1% 0%;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .MobNavIcon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .MobNavIcon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .MobNavIcon {
+    display: none;
+  }
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  nav {
+    display: none;
+  }
+}
+
+#HeaderWrapp > nav {
+  width: 50%;
+}
+
+@media only screen and (max-width: 425px) {
+  #HeaderWrapp > nav {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #HeaderWrapp > nav {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #HeaderWrapp > nav {
+    width: 70%;
+  }
+}
+
+#Dropdown img {
+  height: 16px;
+  width: 16px;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+#Dropdown:hover .DropdownLinks {
+  display: block;
+}
+
+#Dropdown:hover span img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+nav > div {
+  margin: 0% 5%;
+}
+
+nav > div:last-child {
+  margin: 0% 0%;
+  margin-left: 5%;
+}
+
+nav a, nav a:visited {
+  text-decoration: none;
+  color: #6d6d6d;
+}
+
+nav a:hover {
+  color: #d6d6d6;
+}
+
+.DropdownLinks {
+  display: none;
+  position: absolute;
+  background: #464545;
+  padding: 1%;
+}
+
+@media only screen and (max-width: 425px) {
+  .DropdownLinks {
+    margin-top: 4%;
+    position: unset;
+  }
+}
+
+.DropdownLinks a, .DropdownLinks a:visited {
+  display: block;
+  color: #bdbdbd;
+  margin-top: 4%;
+}
+
+.DropdownLinks a:hover {
+  color: #d6d6d6;
+}
+
+@media only screen and (max-width: 425px) {
+  .DropdownLinks a:last-child {
+    margin-bottom: 4%;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

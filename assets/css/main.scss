@@ -1,0 +1,1436 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------MAIN*/
+
+
+  #Wrapper {
+    width: 70%;
+    margin: 0% auto;
+  }
+  
+  .Container h3 {
+    font-weight: 700;
+    margin-bottom: 2%;
+    font-size: 25px;
+
+    @include respond-to(mob) { 
+      margin-bottom: 4%;
+    }
+    
+    @include respond-to(medium-screens) { 
+    
+    }
+    
+    @include respond-to(laptop-screens) { 
+    
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+
+  .Container:first-child h3 {
+    font-weight: 700;
+    margin-bottom: 2%;
+    font-size: 20px;
+  }
+ 
+  #Wrapper-col-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+  
+  .Container {
+    margin: 8% 0%;
+
+    @include respond-to(mob) { 
+      margin: 20% 0%;
+    }
+    
+    @include respond-to(medium-screens) { 
+    
+    }
+    
+    @include respond-to(laptop-screens) { 
+    
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  
+  .Statistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5% 0%;
+    border-radius: 10px;
+    border: 1px solid #d6d6d6;
+    width: 20%;
+
+    @include respond-to(mob) { 
+      width: 100%;
+      margin: 3% 0%;
+      padding: 4% 0%;
+    }
+    
+    @include respond-to(medium-screens) { 
+      width: 45%;
+      margin: 2% 0%;
+      padding: 2.5% 1%;
+    }
+    
+    @include respond-to(laptop-screens) { 
+      width: 45%;
+      margin: 2% 0%;
+      padding: 2% 1%;
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  
+  .Statistics:last-child{
+    width: 22%;
+
+    @include respond-to(mob) { 
+      width: 100%;
+    }
+    
+    @include respond-to(medium-screens) { 
+      width: 45%;
+      margin: 2% 0%;
+      padding: 2.5% 1%;
+    }
+    
+    @include respond-to(laptop-screens) { 
+      width: 45%;
+      margin: 2% 0%;
+      padding: 2% 1%;
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  
+  .Statistics > div {
+    width: 30%;
+  }
+  
+  .Statistics > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #f47a1b;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .Statistics h3, .Statistics p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .StatisticsArrow {
+    display: flex;
+  }
+
+  .StatisticsArrow img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .Statistics:nth-child(2) .StatisticsArrow img {
+    width: 50%;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+  
+  .StatisticsArrow > div {
+    background: linear-gradient(42deg, #ef2d2d 0%, #f26021 100%);
+    color: white;
+    //display: flex;
+    //flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 1%;
+  }
+  
+  .Statistics:nth-child(2) > div:nth-child(1) > div {
+    background: #a8a8a8;
+  }
+  
+  #InputWrapp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+
+    @include respond-to(mob) { 
+      margin-bottom: 10%;
+    }
+    
+    @include respond-to(medium-screens) { 
+    
+    }
+    
+    @include respond-to(laptop-screens) { 
+    
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  
+  #InputWrapp > div {
+    width: 50%;
+
+    @include respond-to(mob) { 
+      width: 100%;
+    }
+    
+    @include respond-to(medium-screens) { 
+    
+    }
+    
+    @include respond-to(laptop-screens) { 
+    
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  
+  #InputWrapp > div:last-child {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .Toggle {
+    display: flex;
+    width: 35%;
+    background: #e6e6e6;
+    padding: 0.8%;
+    border-radius: 5px;
+    font-weight: 700;
+
+    @include respond-to(mob) { 
+      width: 100%;
+    }
+    
+    @include respond-to(medium-screens) { 
+      width: 80%;
+    }
+    
+    @include respond-to(laptop-screens) { 
+      width: 60%;
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  
+  .Toggle > div {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+}
+  
+  .Toggle > div:first-child {
+    background: #f14f25;
+    padding: 4% 7%;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .Toggle > div:last-child {
+    padding: 3% 7%;
+    color: #878787;
+    margin: auto;
+  }
+  
+  #InputWrapp input {
+    width: 45%;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 0% 2%;
+    height: 80%;
+    margin-top: auto;
+    outline: none;
+
+    @include respond-to(mob) { 
+      width: 100%;
+      padding: 1% 2%;
+      margin: 3% 0%;
+    }
+    
+    @include respond-to(medium-screens) { 
+      width: 60%;
+    }
+    
+    @include respond-to(laptop-screens) { 
+      width: 55%;
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+
+  #InputWrapp input:focus {
+    border: 1px solid black;
+  }
+  
+  table {
+    margin: auto;
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+    border-collapse: collapse;
+
+    @include respond-to(mob) { 
+      width: 300%;
+    }
+    
+    @include respond-to(medium-screens) { 
+      width: 200%;
+    }
+    
+    @include respond-to(laptop-screens) { 
+    
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  
+  table thead {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    
+  }
+  
+  table thead tr th {
+    padding: 1%;
+    color: #818181;
+    font-weight: 400;
+    text-align: left;
+    font-size: 15px;
+
+}
+
+table thead tr th > div {
+    display: flex;
+}
+  
+  table tbody tr td {
+    padding: 1%;
+    margin: 8px;
+  }
+  
+  table tbody tr td:first-child {
+    display: flex;
+  }
+  
+  table tbody tr td:first-child > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    font-weight: 700;
+  }
+
+  #Wrapper-col-2 input {
+    height: 75%;
+
+    @include respond-to(mob) { 
+      height: 100%;
+    }
+    
+    @include respond-to(medium-screens) { 
+      height: 88%;
+    }
+    
+    @include respond-to(laptop-screens) { 
+      height: 86%;
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+#Wrapper-col-2 table {
+  @include respond-to(mob) { 
+
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+    width: 150%;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+.TableContainer::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+  
+  #Wrapper-col-3 table tbody tr td:nth-child(4) {
+    font-weight: 700;
+  }
+
+  #Wrapper-col-3 input {
+      height: 82%;
+
+      @include respond-to(mob) { 
+        height: 100%;
+      }
+      
+      @include respond-to(medium-screens) { 
+      
+      }
+      
+      @include respond-to(laptop-screens) { 
+      
+      }
+      
+      @include respond-to(wide-screens) { 
+      
+      }
+  }
+
+  #Wrapper-col-3 table {
+    @include respond-to(mob) { 
+
+    }
+    
+    @include respond-to(medium-screens) { 
+    
+    }
+    
+    @include respond-to(laptop-screens) { 
+      width: 150%;
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+  }
+  
+  table tbody tr td:last-child {
+    font-size: 20px;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  table tbody tr td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  table tbody tr {
+    color: #646464;
+  }
+  
+  table tbody tr:hover {
+    background: #f3f3f3;
+    color: #000000;
+  }
+  
+  .Metadata {
+    background: black;
+    padding: 2%;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .Metadata > div {
+    background: #ef2d2d;
+    border-radius: 100%;
+    height: 13px;
+    width: 13px;
+    margin-right: -8px;
+    margin-top: -7px;
+  }
+  
+  .PageNum {
+    margin-top: 3%;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .PageNum > span {
+    margin: 0% 1%;
+    cursor: pointer;
+    color: rgb(126, 126, 126);
+  }
+  
+  .PageNum > span:hover {
+    color: rgb(51, 51, 51);
+  }
+  
+  .PageNum > span:last-child {
+    display: block;
+    transform: rotate(180deg);
+  }
+  
+  #HeaderNImg {
+      display: flex;
+
+      @include respond-to(mob) { 
+        margin-bottom: 4%;
+      }
+      
+      @include respond-to(medium-screens) { 
+      
+      }
+      
+      @include respond-to(laptop-screens) { 
+      
+      }
+      
+      @include respond-to(wide-screens) { 
+      
+      }
+  }
+
+  #HeaderNImg img {
+    height: 22px;
+    width: 22px;
+    margin: auto;
+}
+
+#HeaderNImg div {
+    background: linear-gradient(42deg, #ef2d2d 0%, #f26021 100%);
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#HeaderNImg h3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0%;
+    margin-left: 3%;
+}
+
+.TableArrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3%;
+    cursor: pointer;
+    color: #868585;
+}
+
+.TableArrows > div:first-child {
+    height: 30%;
+}
+
+.TableArrows > div:hover {
+    color: black;
+}
+
+th p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#ArrowsSearch {
+    width: 10%;
+    display: flex;
+
+    @include respond-to(mob) { 
+      display: none;
+    }
+    
+    @include respond-to(medium-screens) { 
+      display: none;
+    }
+    
+    @include respond-to(laptop-screens) { 
+      width: 13%;
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+#ArrowsSearch p {
+ margin: auto;
+ font-size: 15px;
+}
+
+#Compilations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2% 0%;
+}
+
+.Compilation {
+    width: 23%;
+
+    @include respond-to(mob) { 
+      width: 40%;
+      margin: 4% 0%;
+    }
+    
+    @include respond-to(medium-screens) { 
+    
+    }
+    
+    @include respond-to(laptop-screens) { 
+    
+    }
+    
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+.Compilation img {
+    width: 100%
+    //height: ;
+}
+
+.Compilation h4 {
+    margin: 2% 0%;
+}
+
+.Compilation h5 {
+    font-weight: 400;
+    color: rgb(122, 122, 122);
+    text-transform:uppercase
+}
+
+.CompilationsSpan {
+  color: #878787;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#Chart {
+  width: 100%;
+  margin: auto;
+
+  @include respond-to(mob) { 
+    position: relative;
+    height: 100%;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+section h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 3%;
+
+  @include respond-to(mob) { 
+    font-size: 25px;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+section h2 {
+  margin-bottom: 2%;
+
+  @include respond-to(mob) { 
+    font-size: 20px;
+    margin: 10% 0%;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#BoxWrapp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+
+  @include respond-to(mob) { 
+    flex-wrap: wrap;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+.Box {
+  width: 20%;
+  padding: 1%;
+
+  @include respond-to(mob) { 
+    margin-top: 15%;
+    width: 100%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    width: 25%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    width: 25%;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+.Box h4 {
+  @include respond-to(mob) { 
+
+  }
+  
+  @include respond-to(medium-screens) { 
+    font-size: 14px;
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+.BoxHeader {
+  display: flex;
+}
+
+.BoxBody {
+  margin: 6% 0%;
+  padding: 6% 0%;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.BoxBody > div, .BoxFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.BoxFooter {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 6%;
+}
+
+.BoxFooter span:first-child {
+  color: #797979;
+  font-weight: 500;
+}
+
+.BoxFooter span:last-child {
+  color: #f52727;
+  font-weight: 500;
+}
+
+#MainHero {
+  background: url("../images/home-hero.png") no-repeat;
+  padding-top: 30%;
+  background-size: 100%;
+  background-position: center;
+
+  @include respond-to(mob) { 
+    background-position: right;
+    background-size: 150% 100%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    background-position: top;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    background-position: top;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#MainHeroContainer {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(54,54,54,1) 17%, rgba(0,0,0,0.7875525210084033) 100%);
+  padding: 4%;
+
+  @include respond-to(mob) { 
+    flex-wrap: wrap;
+    padding: 0%;
+    padding-top: 13%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    padding: 0%;
+    padding-top: 5%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+.Progress {
+  margin: 0% 2%;
+  color: white;
+  text-align: center;
+
+}
+
+.Progress img {
+  @include respond-to(mob) { 
+    height: 40%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    height: 50%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    height: 50%;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+.Progress h2 {
+  margin-top: 15%;
+  font-weight: 500;
+
+  
+  @include respond-to(mob) { 
+    font-size: 16px;
+  }
+  
+  @include respond-to(medium-screens) { 
+    font-size: 19px;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    font-size: 21px;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#ChartPercentage {
+  display: flex;
+  text-align: center;
+  padding: 1% 1%;
+
+  @include respond-to(mob) { 
+    display: none;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#ChartPercentage h3 {
+  color: #f52727;
+  margin: 10px 0px;
+}
+
+#ChartPercentage h4 {
+  font-size: 15px;  
+  color: #3b3b3b;
+
+  @include respond-to(mob) { 
+
+  }
+  
+  @include respond-to(medium-screens) { 
+    font-size: 13px;  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#ChartPercentage h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ChartPercentage {
+  margin: 0% 1%;
+}
+
+.ChartPercentage:nth-child(1) {
+  width: 16%;
+}
+
+.ChartPercentage:nth-child(2) {
+  width: 21%;
+}
+
+.ChartPercentage:nth-child(3) {
+  width: 10.5%;
+}
+
+.ChartPercentage:nth-child(4) {
+  width: 52.5%;
+}
+
+.ChartPercentageBracket {
+  height: 20px;
+  border-bottom: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  margin-bottom: 15px;
+}
+
+#AddNewTracksWrapp {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include respond-to(mob) { 
+
+  }
+  
+  @include respond-to(medium-screens) { 
+
+  }
+  
+  @include respond-to(laptop-screens) { 
+    justify-content: space-between;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#AddNewTracks p {
+
+  @include respond-to(mob) { 
+    font-size: 12px;
+    margin-top: 3%;
+  }
+  
+  @include respond-to(medium-screens) { 
+      margin-top: 2%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    font-size: 13px;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#AddNewTracks h3 {
+  @include respond-to(mob) { 
+    font-size: 18px;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#AddNewTracksWrapp > div:first-child {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: #818181;
+
+  @include respond-to(mob) { 
+    width: 100%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    width: 100%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    justify-content: space-around;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#AddNewTracksWrapp > div:last-child {
+  width: 70%;
+  margin: 0% 4%;
+
+  @include respond-to(mob) { 
+    width: 100%;
+    margin-top: 10%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    width: 50%;
+    margin: 0% 4%;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+  
+}
+
+#AddNewTracksUploaded > div {
+  height: 50%;
+  overflow-x: auto;
+  height: 400px;
+}
+
+#AddNewTracksUploaded table {
+
+  @include respond-to(mob) { 
+
+  }
+  
+  @include respond-to(medium-screens) { 
+    width: 100%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#AddNewTracksUploaded > div::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+
+#AddNewTracks {
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 4%;
+
+  @include respond-to(mob) { 
+    padding: 8%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    padding: 6%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#AddNewTracks > div {
+
+  @include respond-to(mob) { 
+    marging: 8% 0%;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+
+}
+
+#AddNewTracks > div:nth-child(2) {
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 10% 0%;
+  cursor: pointer;
+
+  @include respond-to(mob) { 
+    margin: 3% 0%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    margin: 3% 0%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#AddNewTracks img {
+  height: 45px;
+  width: 45px;
+}
+
+#AddNewTracksUploaded thead {
+  border-top: 0px;
+}
+
+#AddNewTracksUploaded thead th {
+  padding-bottom: 2%;
+}
+
+#AddNewTracksUploaded img {
+  height: 12px;
+}
+
+#AddNewTracksUploaded table tbody tr td:last-child {
+  display: flex;
+  font-size: 14px;
+}
+
+#AddNewTracksUploaded table tbody tr td:last-child > div {
+  margin: 0% 4%;
+}
+
+.Edit > div:first-child {
+  display: none;
+}
+
+table tbody tr:hover .Edit > div:first-child  {
+  display: block;
+}
+
+#AddNewTracksUploaded table tr {
+  border-radius: 10px;
+}
+
+#UploadAlbumWrapp {
+  padding: 4% 2%;
+  border-radius: 10px;
+  border: 1px solid #d6d6d6;
+  margin: 0% 8%;
+  color: #797979;
+
+  @include respond-to(mob) { 
+    margin: 0% 0%;
+    padding: 8% 4%;
+  }
+  
+  @include respond-to(medium-screens) { 
+    margin: 0% 0%;
+  }
+  
+  @include respond-to(laptop-screens) { 
+    margin: 0% 2%;
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#UploadAlbumWrapp h4 {
+  text-align: center;
+  font-size: 18px;
+}
+
+#UploadAlbumWrapp > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#UploadAlbumWrapp > div > div {
+  width: 35%;
+  padding: 3%;
+  margin: auto;
+
+  @include respond-to(mob) { 
+    width: 100%;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#UploadAlbumWrapp input {
+  border: 0px;
+  border-bottom: 1px solid #bebebe;
+  padding: 8px;
+  outline: none;
+  width: -webkit-fill-available;
+  font-size: 14px;
+}
+
+#UploadAlbumWrapp select {
+  width: 100%;
+  font-size: 14px;
+  padding: 8px;
+  border: 0px;
+  border-bottom: 1px solid #bebebe;
+  outline: none;
+  color: #797979;
+}
+
+
+#UploadAlbumWrapp form {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#UploadAlbumWrapp span {
+  font-size: 10px;
+  color: #8e8e8e;
+}
+
+.AttachFile {
+  display: flex;
+  justify-content: space-between;
+}
+
+#UploadAlbumWrapp form > div {
+  margin: 5% 0%;
+
+}
+
+#UploadAlbumWrapp form > div:nth-child(3) {
+  margin-bottom: 2%;
+  margin-bottom: 2%;
+  border-bottom: 1px solid #bebebe;
+  padding: 8px;
+  font-size: 14px;
+}
+
+#UploadAlbumWrapp form button {
+  padding: 1.5% 5%;
+  background: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  color: #616161;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.AttachFile > div:first-child {
+  margin-top: auto;
+}
+
+.UploadedImg {
+  display: flex;
+  justify-content: center;
+}
+
+.UploadedImg img {
+  @include respond-to(mob) { 
+    height: 130px;
+    width: 130px;;
+  }
+  
+  @include respond-to(medium-screens) { 
+    height: 180px;
+    width: 180px;;
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+.ImgPreview span {
+  text-align: center;
+  display: block;
+  margin-top: 2%;
+}
+
+#UploadAlbumWrapp > button {
+  background: #f14f25;
+  border: 1px solid #f14f25;
+  padding: 1.3% 4%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+
+  @include respond-to(mob) { 
+    padding: 4% 7%;
+    margin-top: 2%;
+  }
+  
+  @include respond-to(medium-screens) { 
+  
+  }
+  
+  @include respond-to(laptop-screens) { 
+  
+  }
+  
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+input:focus {
+  border: 1px solid black;
+}
+
+.TableContainer {
+  overflow: auto;
+}
